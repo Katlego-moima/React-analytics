@@ -38,7 +38,7 @@ const Report = () => {
     };
 
     const displayResults = (response) => {//(2)
-      console.log(response);
+      // console.log(response);
       const queryResult = response.result.reports[0].data.rows;
       const result = queryResult.map((row) => {
 

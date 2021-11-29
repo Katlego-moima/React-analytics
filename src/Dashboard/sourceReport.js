@@ -3,6 +3,7 @@ import { Bar } from "react-chartjs-2";
 import { addDays, format } from "date-fns";
 import CustomDatePicker from "./datepicker";
 import { queryReport } from "./queryReport";
+import { Chart, CategoryScale, LinearScale, BarElement } from 'chart.js';
 import { formatDate, transformToDate } from "./utils";
 import {
   ChartTitle,
@@ -12,6 +13,8 @@ import {
   ChartWrapper,
   colors,
 } from "./styles";
+
+Chart.register(CategoryScale, LinearScale, BarElement);
 
 const SourceReport = (props) => {
   const INITIAL_STATE = {
@@ -164,7 +167,7 @@ const SourceReport = (props) => {
 
   useEffect(() => {
     const request = {
-      viewID: props.viewID,
+      viewID: "255797754",
       startDate,
       endDate,
       metrics: "ga:users",

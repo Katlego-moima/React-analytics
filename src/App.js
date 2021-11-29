@@ -7,6 +7,7 @@ import PageviewsReport from './Dashboard/pageviewReport';
 import DevicesReport from './Dashboard/devicesReport';
 import CountriesReport from './Dashboard/countriesReport';
 import BrowsersReport from './Dashboard/browsersReport';
+import SourceReport from './Dashboard/sourceReport';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
         <DevicesReport/>
         <CountriesReport/>
         <BrowsersReport/>
+        <SourceReport/>
         </>
       )}
     </div>
