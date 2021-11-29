@@ -5,6 +5,8 @@ import Report from './report';
 import ReactGa from 'react-ga';
 import PageviewsReport from './Dashboard/pageviewReport';
 import DevicesReport from './Dashboard/devicesReport';
+import CountriesReport from './Dashboard/countriesReport';
+import BrowsersReport from './Dashboard/browsersReport';
 
 function App() {
 
@@ -50,6 +52,8 @@ function App() {
         <Report/>
         <PageviewsReport/>
         <DevicesReport/>
+        <CountriesReport/>
+        <BrowsersReport/>
         </>
       )}
     </div>
