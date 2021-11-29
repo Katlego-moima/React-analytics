@@ -1,5 +1,5 @@
 const initAuth = () => {
-    const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+    // const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
     return window.gapi.auth2.init({
       client_id: "622241809623-epqej1eiotnvnorchlng550022fnqcoc.apps.googleusercontent.com",
       scope: "https://www.googleapis.com/auth/analytics.readonly",

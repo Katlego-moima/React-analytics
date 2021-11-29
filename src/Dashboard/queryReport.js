@@ -1,4 +1,7 @@
 import { format } from "date-fns";
+import { Chart, PointElement, LineElement } from 'chart.js';
+
+Chart.register(PointElement, LineElement);
 
 export const queryReport = (props) => {
   const {
