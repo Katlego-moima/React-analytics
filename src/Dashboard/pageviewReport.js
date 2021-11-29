@@ -38,7 +38,7 @@ const PageviewsReport = (props) => {
 
   useEffect(() => {
     const request = {
-      viewID: props.viewID,
+      viewID: "255797754",
       startDate,
       endDate,
       metrics: "ga:pageviews",

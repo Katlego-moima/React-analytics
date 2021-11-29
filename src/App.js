@@ -3,6 +3,7 @@ import "./App.css";
 import { renderButton, checkSignedIn } from "./utils";
 import Report from './report';
 import ReactGa from 'react-ga';
+import PageviewsReport from './Dashboard/pageviewReport';
 
 function App() {
 
@@ -44,7 +45,10 @@ function App() {
       {!isSignedIn ? (
         <div id="signin-button"></div>
       ) : (
+        <>
         <Report/>
+        <PageviewsReport/>
+        </>
       )}
     </div>
   );
