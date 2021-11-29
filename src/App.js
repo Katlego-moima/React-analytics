@@ -2,8 +2,18 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { renderButton, checkSignedIn } from "./utils";
 import Report from './report';
+import ReactGa from 'react-ga';
 
 function App() {
+
+  useEffect(() =>{
+    ReactGa.initialize('UA-213402758-1')
+
+    //to report pageview
+
+    ReactGa.pageview('/app')
+  })
+
 
   const [isSignedIn, setIsSignedIn] = useState(false);
 

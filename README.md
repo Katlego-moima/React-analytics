@@ -1,4 +1,4 @@
-
+<!-- 
 #1 Go to https://console.cloud.google.com/apis/enableflow?apiid=analyticsreporting.googleapis.com&credential=client_key&project=serene-circlet-333606
 
 #2 Register your application for Analytics Reporting API in the Google API console  
@@ -33,7 +33,7 @@
 - navigate to Admin  section on the left side menu
 -in the View column click View Settings
 - copy the View ID
-- use it in the Report.js replace the old one
+- use it in the Report.js replace the old one -->
 
 
 
