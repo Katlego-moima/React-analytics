@@ -1,3 +1,57 @@
+
+#1 Go to https://console.cloud.google.com/apis/enableflow?apiid=analyticsreporting.googleapis.com&credential=client_key&project=serene-circlet-333606
+
+#2 Register your application for Analytics Reporting API in the Google API console  
+- select a project where your application will be registered 
+- choose option Create a project then click continue
+
+#3 Click "Go to credentials" button 
+- add credentials you need 
+- which API are you using (Analytics Reporting API)
+- where will you be calling the API from (Web browser(javascript))
+- what data will you be accessing(User data)
+
+#4 Press "What credentials do i need" button
+
+#5 Press "Set up consent screen" in the next window choose External User Type and press "Create"
+
+#6 On the next page fill the application name and Support email(filled automatically).
+
+#7 Press save
+
+#8 Navigate to credentials menu on the left bar then press "Create Credentials"
+- in the dropdown menu select "Oath Cliend ID"
+
+#9 Choose web application in the application type field 
+- then enter http://localhost:3000 in the authorized Javascript origins field
+-also enter the name of the app (web client 1 -default)
+- press save button
+- The data with your Client ID and Client Secret appears 
+
+
+#10 set up google analytics account using this link https://analytics.google.com/
+- navigate to Admin  section on the left side menu
+-in the View column click View Settings
+- copy the View ID
+- use it in the Report.js replace the old one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +122,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+

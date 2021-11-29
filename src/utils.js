@@ -1,6 +1,6 @@
 const initAuth = () => {
     return window.gapi.auth2.init({
-      client_id: "622241809623-b24sgrr4a33snf1u7u0p15p348apbtoh.apps.googleusercontent.com", //paste your client ID here
+      client_id: "622241809623-epqej1eiotnvnorchlng550022fnqcoc.apps.googleusercontent.com", //paste your client ID here
       scope: "https://www.googleapis.com/auth/analytics.readonly",
     });
   };
