@@ -4,6 +4,7 @@ import { renderButton, checkSignedIn } from "./utils";
 import Report from './report';
 import ReactGa from 'react-ga';
 import PageviewsReport from './Dashboard/pageviewReport';
+import DevicesReport from './Dashboard/devicesReport';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <>
         <Report/>
         <PageviewsReport/>
+        <DevicesReport/>
         </>
       )}
     </div>

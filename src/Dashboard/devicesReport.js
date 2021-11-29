@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { addDays } from "date-fns";
 import { Doughnut } from "react-chartjs-2";
+import { Chart, ArcElement, DoughnutController } from 'chart.js';
 import CustomDatePicker from "./datepicker";
 import { queryReport } from "./queryReport";
 import { ChartTitle, Subtitle, PieChartWrapper, colors } from "./styles";
+
+Chart.register(DoughnutController, ArcElement);
 
 const DevicesReport = (props) => {
   const INITIAL_STATE = {
@@ -58,7 +61,7 @@ const DevicesReport = (props) => {
 
   useEffect(() => {
     const request = {
-      viewID: props.viewID,
+      viewID: "255797754",
       startDate,
       endDate,
       metrics: "ga:users",
