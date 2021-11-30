@@ -1,13 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import { renderButton, checkSignedIn } from "./utils";
-import Report from './report';
 import ReactGa from 'react-ga';
-import PageviewsReport from './Dashboard/pageviewReport';
-import DevicesReport from './Dashboard/devicesReport';
-import CountriesReport from './Dashboard/countriesReport';
-import BrowsersReport from './Dashboard/browsersReport';
-import SourceReport from './Dashboard/sourceReport';
 import DashBoard from './Dashboard/dashboard';
 
 function App() {
@@ -51,12 +45,6 @@ function App() {
         <div id="signin-button"></div>
       ) : (
         <>
-        {/* <Report/>
-        <PageviewsReport/>
-        <DevicesReport/>
-        <CountriesReport/>
-        <BrowsersReport/>
-        <SourceReport/> */}
         <DashBoard/>
         </>
       )}
