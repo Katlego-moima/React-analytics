@@ -15,7 +15,7 @@ const DashBoard = () => {
   return (
     <>
       <Header />
-      {viewID ? (
+       
         <>
           <DayVisitsReport
             metric={"ga:users"}
@@ -35,9 +35,7 @@ const DashBoard = () => {
             <DevicesReport viewID={viewID} />
           </LastRow>
         </>
-      ) : (
-        <InputField submitViewId={(id) => setViewID(id)} />
-      )}
+  
     </>
   );
 };
